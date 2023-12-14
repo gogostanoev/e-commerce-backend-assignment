@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "3bb38e4e-ebda-4a5f-98c3-46f6382623a7",
+		"name": "REST API e commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26311612"
+	},
+	"item": [
+		{
+			"name": "GET PRODUCTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/products",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PRODUCTS BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/products/82208e65-1245-4363-9225-d55c9eec22e2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"82208e65-1245-4363-9225-d55c9eec22e2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE PRODUCT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"gsdffdsfds\",\r\n    \"price\": 222,\r\n    \"status\": \"unactive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/products",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE PRODUCT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"The name was changed\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/products/dcdb719e-efca-4842-af46-166f388525f5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"dcdb719e-efca-4842-af46-166f388525f5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE PRODUCT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Product Name\",\r\n    \"price\": 100,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/products/aa8b8217-44e9-4974-bd64-eaa8d3c7c9f3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"aa8b8217-44e9-4974-bd64-eaa8d3c7c9f3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET IMAGE",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Product Name\",\r\n    \"price\": 100,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/images",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET IMAGE BY ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Product Name\",\r\n    \"price\": 100,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/images/3952301c-f513-412e-8ba8-803a5ed76988",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"images",
+						"3952301c-f513-412e-8ba8-803a5ed76988"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE IMAGE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://images.immediate.co.uk/production/volatile/sites/30/2017/01/Bunch-of-bananas-67e91d5.jpg?quality=90&resize=440,400\",\r\n    \"priority\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/images/82208e65-1245-4363-9225-d55c9eec22e2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"images",
+						"82208e65-1245-4363-9225-d55c9eec22e2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE IMAGE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Green_and_Black%27s_dark_chocolate_bar_2.jpg/1200px-Green_and_Black%27s_dark_chocolate_bar_2.jpg\",\r\n    \"priority\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/images/97f95ddd-7874-4763-a213-895ee1f0ad89",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"images",
+						"97f95ddd-7874-4763-a213-895ee1f0ad89"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE IMAGE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://blog.playstation.com/tachyon/2023/10/cd56722db7b991b3d7a33f1bafd55f80d0ac553d.png?resize=1088%2C612&crop_strategy=smart\",\r\n    \"priority\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/images/14b24939-cfe1-49a2-b9f8-0a8384d8ee13",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"images",
+						"14b24939-cfe1-49a2-b9f8-0a8384d8ee13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
